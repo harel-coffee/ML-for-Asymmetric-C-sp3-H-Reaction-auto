@@ -17,9 +17,9 @@ To include synthetic data, we used the SMOTE technique. It has done by using Smo
 Place the data files (e.g. 'MLS-LA-LB-LC-LD-Real.csv' and 'MLS-LA-LB-LC-LD-Real-Synthetic80svm.csv') and python file (e.g. DNN_synthetic.ipynb) in the working directory to run the code. Run the code after changing the necessary file names. The newly generated 'MLS-LA-LB-LC-LD-Real-Synthetic80svm-Result.csv' file contains test and train RMSEs for 100 different randomized test–train splits.
 
 Place the data files (e.g. 'MLS-LA-LB-LC-LD-Real.csv' and ‘MLS-LA-LB-LC-LD-Real-Synthetic80svm.csv') and python file for different ML algorithms, such as k-NN, RF, GB, DNN, and DT (e.g. GB_synthetic.py) in the working directory to run the code. Change the necessary file names and save .py file before running the code. Type "python GB_synthetic.py > MLS-LA-LB-LC-LD-Real-Synthetic-Result.txt" in the working directory. The 'MLS-LA-LB-LC-LD-Real-Synthetic-Result.txt' file contains the final test and train RMSE, which is averaged over 100 different randomized test–train splits.
-# Out-of-bag Testing
+## Out-of-bag Testing
 
 Place the python file (e.g. Out-of-bag.ipynb), csv file containing both real plus synthetic samples (e.g. 'MLS-LA-LB-LC-LD-Real-Synthetic.csv'), csv file of OOB sets (e.g. 'Set-1.csv') in working directory. Change the filenames in python file, change the optimal hyper-parameter value, after modification execute the code. It will give test RMSEs for OOB sets.
 
-# SHAP feature importance 
+## SHAP feature importance 
 To run the code, put the data file ('MLS-LA-LB-LC-LD-Real-Synthetic80svm.csv') and the python file (e.g. SHAP.ipynb) in the same directory. Change seed value with best run and filenames, execute the code.
